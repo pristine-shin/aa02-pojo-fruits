@@ -41,8 +41,9 @@ console.log(indexFruitObject(17, fruits));
 
 function indexFruitObject(index, fruits) {
     // Your code here
+    return fruits[index];
 }
-
+console.log(indexFruitObject(17, fruits));
 
 /* 04. `fruitNames()` - Return a list of all of the fruit names
 
@@ -56,7 +57,17 @@ console.log(fruitNames(fruits));
 
 function fruitNames(fruits) {
     // Your code here
+    let fNames = []
+
+    for (let i =0; i < fruits.length; i++) {
+         let fruit = fruits[i];
+    // console.log(fruit.name)
+    fNames.push(fruit.name)
+    }
+    return fNames
 }
+
+console.log(fruitNames(fruits));
 
 /* 05. `getFruitKeys()` - Return a list of all of the keys for each fruit record.
 NOTE: Call a function you previously wrote as a helper function.
