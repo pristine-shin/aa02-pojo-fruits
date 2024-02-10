@@ -11,9 +11,12 @@ console.log(firstFruitObject(fruits));
 
 function firstFruitObject(fruits) {
     // Your code here
-    console.log('testing')
+    return fruits[0];
 }
-
+console.log(firstFruitObject(fruits));
+// { genus: 'Malus', name: 'Apple', id: 6, family: 'Rosaceae', order:
+// 'Rosales', nutritions: { carbohydrates: 11.4, protein: 0.3, fat: 0.4,
+// calories: 52, sugar: 10.3 } }
 
 
 /* 02. `lastFruitObject()` - Return the last object in the fruits array
